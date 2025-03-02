@@ -51,9 +51,9 @@ Example Usage:
 Example Response:
 {"points": 28}
 
-## Test Cases
+## Running Tests
 
-If you want to run the test cases, you will need to install python and in a different terminal put the following commands:
+To run the test cases, you will need to have Python installed. Open a seperate terminal and run the following commands:
 
 ```
 pip install requirements.txt
