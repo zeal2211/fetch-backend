@@ -3,8 +3,8 @@ This project provides a Django-based receipt processing API, containerized using
 
 ## Prerequisites
 
--[Git](https://git-scm.com/downloads)
--[Docker](https://www.docker.com/products/docker-desktop/)
+- [Git](https://git-scm.com/downloads)
+- [Docker](https://www.docker.com/products/docker-desktop/)
 
 ## Setup Instructions
 
