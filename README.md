@@ -26,17 +26,26 @@ docker run -p 8000:8000 django-app
 
  ## API Usage
 
- You can curl or postman to interact with the API.
+ You can curl or use postman to interact with the API.
 
  ### Process a Receipt
 
-`curl -H 'Content-Type: application/json' -d @input.json -X POST http://localhost:8000/receipts/process`
+`curl -H 'Content-Type: application/json' -d @samples/input1.json -X POST http://localhost:8000/receipts/process`
 
-This will return a JSON reponse containing an id for the processed receipt.
+This will return a JSON reponse containing an id for the processed receipt. 
+Example output: {"id":"c8d1e276-ae28-4853-aa21-9de9cbf5d7ea"}
 
 ### Retrieve Points for a Receipt
 
 `curl http://localhost:8000/receipts/<receipt_id>/points`
 
 Replace <receipt_id> with the ID received from the previous request.
+This will return the points associated with that receipt id.
+
+Example:
+
+curl http://localhost:8000/receipts/c8d1e276-ae28-4853-aa21-9de9cbf5d7ea/points
+
+Output:
+{"points": 28}
 
