@@ -31,6 +31,7 @@ docker run -p 8000:8000 django-app
  ### Process a Receipt
 
 `curl -H 'Content-Type: application/json' -d @input.json -X POST http://localhost:8000/receipts/process`
+
 This will return a JSON reponse containing an id for the processed receipt.
 
 ### Retrieve Points for a Receipt
