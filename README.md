@@ -62,16 +62,16 @@ python manage.py test
 
 Expected Response:
 
+```
 Found 2 test(s).
-
 Creating test database for alias 'default'...
-
 System check identified no issues (0 silenced).
-
+..
+----------------------------------------------------------------------
 Ran 2 tests in 0.022s
 
 OK
-
+```
 
 
 
