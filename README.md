@@ -30,13 +30,16 @@ docker run -p 8000:8000 django-app
 
  ### Process a Receipt
 
+
 `curl -H 'Content-Type: application/json' -d @samples/input1.json -X POST http://localhost:8000/receipts/process`
 
 This will return a JSON reponse containing an id for the processed receipt. 
 
 Example Response: {"id":"c8d1e276-ae28-4853-aa21-9de9cbf5d7ea"}
 
+
 ### Retrieve Points for a Receipt
+
 
 `curl http://localhost:8000/receipts/<receipt_id>/points`
 
@@ -50,6 +53,7 @@ Example Usage:
 
 Example Response:
 {"points": 28}
+
 
 ## Running Tests
 
