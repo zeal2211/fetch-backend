@@ -10,9 +10,10 @@ cd fetch-backend
 ```
 
 2. Start Docker
+
 Ensure docker is running on your machine before proceeding.
 
-3. Build and run the Docker Container
+4. Build and run the Docker Container
 ```
 docker build -t django-app .
 docker run -p 8000:8000 django-app
