@@ -9,6 +9,7 @@ This project provides a Django-based receipt processing API, containerized using
 ## Setup Instructions
 
 1. Clone the repository
+
 ```
 git clone https://github.com/zeal2211/fetch-backend.git
 cd fetch-backend
@@ -19,6 +20,7 @@ cd fetch-backend
 Ensure docker is running on your machine before proceeding.
 
 3. Build and run the Docker Container
+
 ```
 docker build -t django-app .
 docker run -p 8000:8000 django-app
@@ -30,7 +32,6 @@ docker run -p 8000:8000 django-app
 
  ### Process a Receipt
 
-
 `curl -H 'Content-Type: application/json' -d @samples/input1.json -X POST http://localhost:8000/receipts/process`
 
 This will return a JSON reponse containing an id for the processed receipt. 
@@ -39,7 +40,6 @@ Example Response: {"id":"c8d1e276-ae28-4853-aa21-9de9cbf5d7ea"}
 
 
 ### Retrieve Points for a Receipt
-
 
 `curl http://localhost:8000/receipts/<receipt_id>/points`
 
