@@ -35,6 +35,8 @@ docker run -p 8000:8000 django-app
 This will return a JSON reponse containing an id for the processed receipt.
 
 ### Retrieve Points for a Receipt
+
 `curl http://localhost:8000/receipts/<receipt_id>/points`
+
 Replace <receipt_id> with the ID received from the previous request.
 
