@@ -51,3 +51,23 @@ Example Usage:
 Example Response:
 {"points": 28}
 
+## Test Cases
+
+If you want to run the test cases, you will need to install python and in a different terminal put the following commands:
+
+`pip install requirements.txt`
+`python manage.py test`
+
+Expected Response:
+Found 2 test(s).
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.022s
+
+OK
+Destroying test database for alias 'default'...
+
+
+
