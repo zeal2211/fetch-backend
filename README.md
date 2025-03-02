@@ -34,7 +34,7 @@ docker run -p 8000:8000 django-app
 
 This will return a JSON reponse containing an id for the processed receipt. 
 
-Example output: {"id":"c8d1e276-ae28-4853-aa21-9de9cbf5d7ea"}
+Example Response: {"id":"c8d1e276-ae28-4853-aa21-9de9cbf5d7ea"}
 
 ### Retrieve Points for a Receipt
 
@@ -48,6 +48,6 @@ Example Usage:
 
 `curl http://localhost:8000/receipts/c8d1e276-ae28-4853-aa21-9de9cbf5d7ea/points`
 
-Output:
+Example Response:
 {"points": 28}
 
