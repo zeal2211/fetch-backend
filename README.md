@@ -1,6 +1,11 @@
 # Receipt Processor
 This project provides a Django-based receipt processing API, containerized using Docker. Follow the instructions below to setup and run the service.
 
+## Prerequisites
+
+-[Git](https://git-scm.com/downloads)
+-[Docker](https://www.docker.com/products/docker-desktop/)
+
 ## Setup Instructions
 
 1. Clone the repository
@@ -13,7 +18,7 @@ cd fetch-backend
 
 Ensure docker is running on your machine before proceeding.
 
-4. Build and run the Docker Container
+3. Build and run the Docker Container
 ```
 docker build -t django-app .
 docker run -p 8000:8000 django-app
