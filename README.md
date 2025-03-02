@@ -1,7 +1,7 @@
-#Receipt Processor
+# Receipt Processor
 This project provides a Django-based receipt processing API, containerized using Docker. Follow the instructions below to setup and run the service.
 
-##Setup Instructions
+## Setup Instructions
 
 1. Clone the repository
 ```
@@ -18,16 +18,16 @@ docker build -t django-app .
 docker run -p 8000:8000 django-app
 ```
 
- ##API Usage
+ ## API Usage
 
  You can curl or postman to interact with the API.
 
- ###Process a Receipt
+ ### Process a Receipt
 
 `curl -H 'Content-Type: application/json' -d @input.json -X POST http://localhost:8000/receipts/process`
 This will return a JSON reponse containing an id for the processed receipt.
 
-###Retrieve Points for a Receipt
+### Retrieve Points for a Receipt
 `curl http://localhost:8000/receipts/<receipt_id>/points`
 Replace <receipt_id> with the ID received from the previous request.
 
