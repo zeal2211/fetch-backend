@@ -55,8 +55,8 @@ Example Response:
 
 If you want to run the test cases, you will need to install python and in a different terminal put the following commands:
 
-`pip install requirements.txt`
-`python manage.py test`
+```pip install requirements.txt
+python manage.py test```
 
 Expected Response:
 Found 2 test(s).
